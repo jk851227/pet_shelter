@@ -12,7 +12,6 @@ const Dashboard = () => {
                 setPets(res.data);
                 setLoaded(true)
             })
-            .then(pets.sort((a, b) => a.type - b.type))
             .catch(err => console.log(err))
     }, [])
 
