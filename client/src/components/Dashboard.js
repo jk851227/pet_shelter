@@ -45,19 +45,6 @@ const Dashboard = () => {
                                     </tr>
                                 )
                             })
-                            // pets.map((pet, idx) => {
-                            //     return (
-                            //         <tr key={idx}>
-                            //             <td>{ pet.name }</td>
-                            //             <td>{ pet.type }</td>
-                            //             <td>
-                            //                 Details
-                            //                 |
-                            //                 Edit
-                            //             </td>
-                            //         </tr>
-                            //     )
-                            // })
                         }
                     </tbody>
                 </table>
