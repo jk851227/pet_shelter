@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-// const { SkillSchema } = require('./skill.model');
 
 const PetSchema = new mongoose.Schema({
     name: {

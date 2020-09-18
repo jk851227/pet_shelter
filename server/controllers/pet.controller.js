@@ -47,12 +47,6 @@ module.exports = {
             .catch(err => res.json(err))
     },
 
-    addSkill: (req, res) => {
-        Pet.findOneAndUpdate({ _id: req.params.id }, {$addToSet: { skills: req.body  }}, { new: true }) 
-            .then(data => res.json(data))
-            .catch(err => res.json(err))
-    },
-
     // Delete
     deletePet: (req, res) => {
         Pet.findOneAndDelete({ _id: req.params.id })

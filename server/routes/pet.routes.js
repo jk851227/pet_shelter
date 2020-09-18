@@ -8,7 +8,6 @@ module.exports = app => {
     app.get("/api/pets/:id", petController.onePet);
     // U
     app.patch("/api/pets/:id", petController.updatePet);
-    app.patch("/api/pets/:id/skill", petController.addSkill);
     // D
     app.delete("/api/pets/:id", petController.deletePet);
 }
