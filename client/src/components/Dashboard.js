@@ -32,7 +32,7 @@ const Dashboard = () => {
                     </thead>
                     <tbody>
                         {
-                            pets.sort((a, b) => a.name - b.name).map((pet, idx) => {
+                            pets.map((pet, idx) => {
                                 return (
                                     <tr key={idx}>
                                         <td>{ pet.name }</td>
