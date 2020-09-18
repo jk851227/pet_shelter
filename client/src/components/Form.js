@@ -1,4 +1,3 @@
-import { navigate } from '@reach/router'
 import React from 'react'
 
 const Form = (props) => {

@@ -25,7 +25,7 @@ const EditPet = props => {
                 }
             })
             .catch(err => console.log(err))
-    }, [])
+    }, [id])
 
     const handleChange = e => {
         setPet({

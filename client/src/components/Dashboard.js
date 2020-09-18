@@ -20,7 +20,7 @@ const Dashboard = () => {
             <h3>These pets are looking for a good home</h3>
             <Link to="/new">Add new pet to the shelter</Link>
             {
-                loaded &&
+                loaded ?
                 <table>
                     <thead>
                         <tr>
@@ -47,6 +47,8 @@ const Dashboard = () => {
                         }
                     </tbody>
                 </table>
+                :
+                ''
             }
         </>
     )
