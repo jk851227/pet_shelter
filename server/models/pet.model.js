@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { SkillSchema } = require('./skill.model');
+// const { SkillSchema } = require('./skill.model');
 
 const PetSchema = new mongoose.Schema({
     name: {
@@ -17,7 +17,15 @@ const PetSchema = new mongoose.Schema({
         required: [true, "Pet description is required"],
         minlength: [3, "Description must be at least 3 characters"],
     },
-    skills: [ SkillSchema ]
+    skill1: {
+        type: String
+    },
+    skill2: {
+        type: String
+    },
+    skill3: {
+        type: String
+    }
 }, { timestamps: true });
 
 const Pet = mongoose.model("Pet", PetSchema);
