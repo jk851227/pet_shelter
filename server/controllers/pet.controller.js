@@ -17,14 +17,8 @@ module.exports = {
 
     // Read
     allPets: (req, res) => {
-        Pet.find({})
-            .then(data => {
-                if(data.length > 0){
-                    res.json(data)
-                } else {
-                    res.json({ error: "There are no pets in shelter" })
-                }
-            })
+        Pet.find()
+            .then(data => res.json(data))
             .catch(err => res.json(err))
     },
 
